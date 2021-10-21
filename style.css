@@ -1,3 +1,31 @@
 body {
     background-color: aqua;
+ 
+}
+h1{
+    border-radius: 10em;
+    background-color: rgb(162, 105, 216);
+    text-decoration-color: rgb(78, 205, 214);
+    margin-left: 11em;
+    width: 15em;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.abovePokemon{
+    border-radius: 3em;
+    background-color: rgb(162, 105, 216);
+    width: 35em;
+    margin-left: 20em;
+   
+}
+.pokemon{
+    border-radius: 1em;
+   padding-top: 2em;
+   padding-left: 2em;
+    background-color: rgb(78, 205, 214);
+   width: 13em;
+ margin-left: 10em;  
 }

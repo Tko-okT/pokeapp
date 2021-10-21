@@ -1,6 +1,10 @@
 const pokemonDiv = document.querySelector(".pokemon")
 const POKE_URL = "https://pokeapi.co/api/v2/pokemon/"
-
+const spaceBetweenPokemon = function(){
+    let h2 = document.createElement("h2")
+        h2.innerHTML = "________________"
+        pokemonDiv.append(h2)
+}
 const printPokemonName = function(name){
     let h2 = document.createElement("h2")
         h2.innerHTML = name
@@ -9,13 +13,13 @@ const printPokemonName = function(name){
 
 const printPokemonOrder = function(order) {
     let h3 = document.createElement("h3")
-    h3.innerHTML = order
+    h3.innerHTML = "Pokedex Order Num." + order
     pokemonDiv.append(h3)
 }
 
 const printPokemonWeight = function(weight) {
     let h3 = document.createElement("h3")
-    h3.innerHTML = weight
+    h3.innerHTML = "Weight: " + weight + ".lbs"
     pokemonDiv.append(h3)
 }
 
@@ -35,6 +39,7 @@ const fetchPokemonNames = function(name) {
         displayPokemonPicture(data.sprites.front_shiny)
         printPokemonOrder(data.order)
         printPokemonWeight(data.weight)
+        spaceBetweenPokemon()
     })
 }
 
